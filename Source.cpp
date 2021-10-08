@@ -2,7 +2,7 @@
 using namespace std;
 class Point
 {
-	int x, y, z;
+	int x, y, z5;
 public:
 	void setx(int newx)
 	{
