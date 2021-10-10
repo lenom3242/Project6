@@ -191,8 +191,7 @@ void main()
 	Car machina2("BMW", "Red", "b111aa", 40000);
 	machina.information();
 	machina2.information();
-	Car* stable = 0;
-	Man ivanov("Ivanov Petr Michailovich", 29, stable);
+	Man ivanov("Ivanov Petr Michailovich", 29, NULL);
 	Car toyota("Toyota", "White", "a123bv", 255000);
 	ivanov.setcar(&toyota);
 	Man ivanova("Ivanova Klavdia Sergeevna", 25, &toyota);
