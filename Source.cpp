@@ -20,11 +20,14 @@ public:
 	{
 		return y;
 	}
+	void output()
+	{
+		cout << "x=" << x <<"\ny=" << y << endl;
+	}
 	Point(int newx = 0, int newy = 0)
 	{
 		x = newx;
 		y = newy;
-		cout << "P\n";
 	}
 };
 class Circle
@@ -41,12 +44,25 @@ public:
 	{
 		return radius;
 	}
-	Circle(int newx, int newy) : centr(newx, newy) {
-
+	void output()
+	{
+		cout << "radius=" << radius << "centr=";
+		centr.output();
+		cout << endl;
 	}
+	int dlina()
+	{
+		return 2 * 3.14 * radius;
+	}
+	int ploshad()
+		return 3.14 * radius * radius;
+	Circle(int newradius=1, int newx=0, int newy=0) : centr(newx, newy), radius(newradius)
+	{
+		radius = newradius;
+	}
+	
 };
 void main()
 {
-	Circle c(1, 1);
-	system("pause");
+	Circle c(1,1,1);
 }
