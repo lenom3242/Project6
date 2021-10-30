@@ -1,17 +1,18 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class Point
-{int x, y;
+class Point{
+	int x, y;
 public:
 	void setx(int newx){x = newx;}
 	void sety(int newy){y = newy;}
 	int getx(){return x;}
 	int gety(){return y;}
 	void output(){cout << "x=" << x <<" y=" << y << endl;}
-	Point(int newx = 0, int newy = 0){x = newx;y = newy;}};
-class Circle
-{int radius;
+	Point(int newx = 0, int newy = 0){x = newx;y = newy;}
+};
+class Circle{
+	int radius;
 	Point centr;
 	Point* p_centr;
 public:
